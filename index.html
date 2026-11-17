@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Parlour Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Glow Beauty Parlour</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#timings">Timings</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Apni khoobsurati, hamari mehnat</h2>
+    <p>Hair, makeup, facial aur bridal services, sab ek jagah.</p>
+    <a href="#booking" class="btn">Appointment lein</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Hamari services</h2>
+    <div class="cards">
+      <div class="card"><h3>Hair cut & styling</h3><p>Rs 500 se shuru</p></div>
+      <div class="card"><h3>Facial</h3><p>Rs 1,500 se shuru</p></div>
+      <div class="card"><h3>Makeup</h3><p>Rs 2,000 se shuru</p></div>
+      <div class="card"><h3>Mehndi</h3><p>Rs 1,000 se shuru</p></div>
+      <div class="card"><h3>Bridal package</h3><p>Shadi ke liye custom package</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Hamara kaam</h2>
+    <div class="gallery-grid">
+      <div class="shot">💇</div>
+      <div class="shot">💄</div>
+      <div class="shot">🧖</div>
+      <div class="shot">👰</div>
+    </div>
+  </section>
+
+  <section id="timings" class="timings">
+    <h2>Timings aur location</h2>
+    <p>Monday to Saturday: 10:00 AM - 8:00 PM</p>
+    <p>Sunday: Band</p>
+    <p>Location: Apna address yahan likhein</p>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Appointment form</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Aap ka naam" required>
+      <input type="tel" name="phone" placeholder="Phone number" required>
+      <select name="service" required>
+        <option value="">Service select karein</option>
+        <option>Hair cut & styling</option>
+        <option>Facial</option>
+        <option>Makeup</option>
+        <option>Mehndi</option>
+        <option>Bridal package</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <button type="submit">Booking karein</button>
+    </form>
+    <a href="https://wa.me/923001234567" class="whatsapp" target="_blank">WhatsApp par booking karein</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Glow Beauty Parlour. Sab haqooq mehfooz hain.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
